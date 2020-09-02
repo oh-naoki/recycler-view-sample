@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">quipper-cording-test</string>
+
+    <!-- bottom navigation -->
+    <string name="label_bottom_nav_course_list">講義一覧</string>
+    <string name="label_bottom_nav_favorite_course_list">お気に入り</string>
+</resources>

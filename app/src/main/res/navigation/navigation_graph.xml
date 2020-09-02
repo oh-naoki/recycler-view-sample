@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/navigation_graph"
+            app:startDestination="@id/navi_course_list">
+
+    <custom_fragment
+            android:id="@+id/navi_course_list"
+            android:name="com.example.quipper_cording_test.ui.fragment.CourseListFragment"
+            android:label="CourseListFragment"/>
+
+    <custom_fragment
+            android:id="@+id/navi_favorite_course_list"
+            android:name="com.example.quipper_cording_test.ui.fragment.FavoriteCourseListFragment"
+            android:label="FavoriteCourseListFragment"/>
+
+</navigation>

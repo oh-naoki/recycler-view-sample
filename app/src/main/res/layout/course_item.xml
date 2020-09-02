@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="6dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/course_icon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                app:srcCompat="@mipmap/ic_launcher"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/course_name"
+                android:layout_marginStart="8dp"
+                android:textSize="10sp"
+                app:layout_constraintTop_toTopOf="@+id/course_icon"
+                app:layout_constraintStart_toEndOf="@+id/course_icon"
+                tools:text="講義タイトル"/>
+        <TextView
+                android:id="@+id/teacher_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:textSize="8sp"
+                app:layout_constraintTop_toBottomOf="@+id/course_name"
+                app:layout_constraintStart_toStartOf="@+id/course_name"
+                tools:text="講師名"/>
+        <TextView
+                android:id="@+id/number_of_topics"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:textSize="8sp"
+                app:layout_constraintStart_toEndOf="@+id/teacher_name"
+                app:layout_constraintTop_toTopOf="@+id/teacher_name"
+                app:layout_constraintBottom_toBottomOf="@+id/teacher_name"
+                tools:text="講義数"/>
+        <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textSize="8sp"
+                app:layout_constraintTop_toBottomOf="@+id/teacher_name"
+                app:layout_constraintStart_toStartOf="@+id/teacher_name"
+                app:layout_constraintBottom_toBottomOf="@+id/course_icon"
+                tools:text="講義進捗"/>
+        <ImageView
+                android:id="@+id/favorite_status"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/ic_not_favorite"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
